@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+   --dipeblack:#000;
+   --gray:#2d2929;
+   --orange:#c6520a;
+   --yellow:#ffc100;
+   --white:#FFF;
+   --green:#27ae60;
+   --black:#192a56;
+   --light-color:#666;
+   --box-shadow:0 .5rem 1.5rem rgba(0, 0, 0, 0.152);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+   
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  text-transform: capitalize;
+  background-color:#FFF;
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--black);
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  
+  /* padding-left: 22rem; */
+}
+.logo a:hover{
+  color: var(--black);
+}
+
+.logo i{
+  color: var(--green);
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+ul li a{
+  color: var(--gray);
+  text-decoration: none;
+}
+.nav-items li {
+  margin-right: 20px;
+}
+.image{
+  
+  text-align: right;
+  align-items: right;
+  justify-content: right;
+  margin-top: 5rem;
+}
+
+.front-page{
+  margin: 2rem;
+  text-align:left;
+  align-items: left;
+  justify-content: left;
+}
+
+.front-page .hero{
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--black);
+
+}
+.img-1 img{
+  width: 500px;
+  height: 500px;
+}
+/* .my-input .lorem1{
+  font-weight: 500;
+  color: var(--orange)!important;
+  margin: 1.5rem 0rem;
+  font-size: 2rem;
+} */
+.border {
+  border: 1px solid 
+  rgb(255, 0, 0)  !important;
+  width: 300px;
+  border-radius: 1rem;
+}
+.my-input input{
+  margin: 1rem 0rem;
+}
+.button{
+  background: var(--black);
+  color: #FFF;
+ border-style: none;
+ padding: .5rem 1rem;
+ border-radius: 8px;
+ font-size: 1rem!important;
+ font-weight: 500;
+
+}
+.button:hover{
+  background: 
+  var(--green);
+  color: #fff;
+}
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -3px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+  /* font-size: 2rem;
+   */
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -3px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid rgb(255, 0, 0);
+}
+.fyZwWD {
+  width: 100%;
+  height: 92%;
+  object-fit: cover;
+  transform: none;
+  opacity: 1;
+  will-change: transform, opacity;
+  border-radius: inherit;
+  filter: unset;
+  transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+}
+.app{
+  margin-top: 1rem;
+}
+
+
+
+
+.foot-bar{
+  margin: 2rem 0rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.popo{
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+.sound{
+  /* margin-top: 5rem; */
+  background: var(--black);
+  color: #fff;
+}
+.footer-section{
+  background: var(--black);
+  margin-top: 0rem;  
+  border-radius: 2rem 2rem 0rem 0rem;
+  padding: 1rem;
+}
+.good h2{
+  padding: 3rem 0rem;
+  font-weight: 900;
+  font-size: 2.7rem;
+}
+.good p{
+ font-size: .9rem;
+}
+.pop{
+  /* margin-top: 3rem; */
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: var(--black);
+}
+.red{
+  margin-top: 8.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.red i{
+  font-size: 2rem;
+  color: var(--green);
+}
+
+#phone-container,
+#email-container {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#contact-input {
+  margin-top: 0px;
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+.form-overlay {
+ justify-content: right;
+ align-items: right;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+form.form-popup {
+  width: 500px;
+  height: auto;
+}
+.login-logo{
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 900;
+}
+.form-popup {
+  justify-content: right;
+  align-items: right;
+  position: absolute;
+  top: 20%;
+  left: 30%; 
+  right: 30%;
+ /* transform: translate(-50%, -50%); */
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #333;
+}
+
+input[type="text"], input[type="password"] ,input[type="Email"] ,input[type="Google"] {
+  width: 100%;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  border-radius: 5px;
+  border: 1px solid gray;
+  color: var(--dipeblack);
+  font-weight: 600!important;
+
+}
+button[ type="close"], button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+button[type="submit"], button#close-form {
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  margin-top: 20px;
+  background-color: var(--black);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+}
+
+button[type="submit"]:hover, button#close-form:hover{
+background: var(--green);
+}
+.flex {
+  display: flex;
+}
+.btn-sub{
+  margin: 1rem;
+}
+#close-form{
+  margin: 1rem;
+}
+#username{
+  margin-bottom: 3px;
+}
+#password{
+  margin-top: 3px;
+}
+.or{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#continue-with-Email{
+  margin-bottom: 3px;
+}
+/* login form .........................end */
+
+/* sign up page ................... start*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+/* .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  /* padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+
+
+/* The Close Button */
+/* .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+} */
+/* 
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+/* ***************************************** */
+#signUpForm {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 5px;
+}
+.space{
+  margin: 7px;
+}
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-style: none;
+  background-color: none;
+
+}
+/* .btn-primary:hover{
+  border-style: none;
+} */
+
+/* sign up page ...................end */
+/* .my-inpu radio{ */
+ /* margin: 2rem;
+} */
+
+
+
+
+
+
+
+@media (max-width: 992px) { 
+  .image{
+  
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 400px;
+    height: auto;
+
+  } 
+  .img-1 img{
+    width: 100%;
+    height: 100%;
+  }
+  
+.front-page{
+  margin: 2.5rem;
+  padding-left: 47px;
+}
+
+.front-page .hero{
+  margin-top: 7rem;
+  font-size: 1.3rem;
+}
+.border {
+  width: 260px;
+}
+.front-page .hero {
+  margin-top: 1.3rem;
+}
+ }
+ @media (max-width: 760px) { 
+  .image{
+   
+    margin-top: 5rem;
+    width: 400px;
+    height: auto;
+
+  }
+}
+@media (max-width:410px) {
+  .image{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 240px;
+    height: auto;
+    /* padding: 0rem 2rem; */
+  }
+  .img-1 img{
+    width: 100%;
+    height: 100%;
+  }
+  .front-page .hero {
+    margin-top: 0rem;
+    font-size: 1.3rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+    align-items: left;
+    justify-content: left;
+    text-decoration: none;
+    text-align: left;
+    margin: auto;
+    
+    /* padding-left: 22rem; */
+  }
+  img, svg {
+    vertical-align: text-top;
+}
+  
+}
+@media (max-width:479px) {
+  .img-1 img{
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+@media (max-width:360px) {
+  .image{
+    padding-left: 5rem;
+  }
+  .red{
+    margin-top: .5rem;
+  }
+  .button{
+    padding: 1rem;
+  }
+  .front-page{
+    padding-left: 19px;
+  }
+}
+@media (max-width:600px) {
+  .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+.red {
+  margin-top: 0.5rem;
+}
+.sc-s1isp7-3 .cVOEqG{
+margin-bottom: .2rem;
+}
+}
+@media (max-width:320px) {
+  .image{
+    padding-left: 1rem;
+  }
+  .front-page {
+    padding-left: 0px;
+}
+}
+@media (max-width:800px) {
+  .front-page{
+    margin-top: 5rem;
+  }
+  .form-popup {
+    left: 19%;
+}
+}
+@media (max-width: 384px){
+.form-popup {
+    left: 11%;
+}
+.image{
+  padding-left: 39px;
+}
+.front-page {
+  margin-top: 2rem;
+  
+}
+}
+@media (max-width:640px) {
+  form.form-popup {
+    width: 262px;
+}
+form.form-popup {
+  width: 262px;
+}
+body{
+  line-height: 0.0;
+  font-size: .7rem;
+}
+.form-popup {
+  top: 1%;
+}
+.form-popup {
+  left: 25%;
+}
+}
+@media (max-width:360px) {
+
+}
+/* @media (max-width: 403px){
+.front-page .hero {
+    margin-top: 0rem;
+    font-size: 1.3rem;
+  }
+} */
+/* //login page meia Query */
+
+@media (max-width: 1100px) {
+
+  .form-popup {
+    left: 15%; 
+}
+}
+@media (max-width: 690px) {
+
+  .form-popup {
+  left: 20%; 
+}
+form.form-popup {
+  width: 300px;
+}
+.form-popup {
+  top: 23%;
+}
+}
+
+
+@media (max-width: 690px){
+.form-popup {
+    left: 3%;
+}
+}
+@media (max-width: 360px){
+.form-popup {
+    left: 8%;
+}
+}
+@media (max-width: 320px){
+.form-popup {
+    left: 2%;
+}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>RESTO LOGIN PAGE</title>
+    <!-- font awesome cdn ......  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- nav-section..... start -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#!" class="logo"><i class="fas fa-utensils"></i>resto</a>
+        </div>
+        <ul class="nav-items">
+          <li id="show-form"><a href="#">log in</a></li>
+          <li id="show-form"> <button type="button" class="open-sign-up-btn" onclick="showSignUpForm()" style="border-style: none;background: none;">Sign Up</button>
+          </li>
+          <li id="myBtn"><a href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- nav-section..... End -->
+
+    <!-- main section .............. start -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="image">
+              <div class="img-1">
+                <img
+                  alt="get-zomato-app"
+                  src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png"
+                  loading="auto"
+                  class="sc-s1isp7-5 jQwYOW"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="front-page">
+              <p class="hero">Get the Resto App</p>
+              <p class="hero-p">
+                We will send you a link open it on your phone to download the
+                app.
+              </p>             
+
+                <form action="" method="post" class="my-input">
+                  <div class="r-flex" id="phone-container">
+                    <input type="radio"  name="contact" id="phone-radio" />
+                    <label for="phone-radio">Phone</label>
+                  </div>
+                  <div class="r-flex" id="email-container">
+                    <input type="radio" name="contact" id="email-radio" />
+                    <label for="email-radio">Email</label>
+                  </div>
+                  <br>
+                  <input type="text" id="contact-input" disabled pattern="[0-9]*" placeholder="Enter phone number" /> <br>
+                  <button class="button">
+                    Shere App Link
+                  </button>
+                </form>              
+
+             <div class="row">
+                <div class="app"><p>Download app from</p></div>
+                <div class="col-sm-6 col-md-6 col-lg-6" style="width: 200px;padding: .2rem;">
+                  <div height="4rem" width="13.7rem" class="sc-s1isp7-1 fxuOHl">
+                    <div src="" class="sc-s1isp7-3 cVOEqG"></div>
+                    <img
+                      alt="image"
+                      src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                      loading="lazy"
+                      class="sc-s1isp7-5 fyZwWD"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6" style="width: 200px;padding: .2rem
+                ;">
+                  <div height="4rem" width="13.7rem" class="sc-s1isp7-1 fxuOHl">
+                    <div src="" class="sc-s1isp7-3 cVOEqG"></div>
+                    <img
+                      alt="image"
+                      src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                      loading="lazy"
+                      class="sc-s1isp7-5 fyZwWD"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- main section .............. END -->
+
+    <!-- footer section ..... Start-->
+        <div class="container">
+          <div class="red">
+            <i class="fas fa-utensils"></i> <b class="pop">Resto</b>
+          </div>
+        </div>
+<!-- <div class="fff">
+        <div id="signUpForm">
+          <button type="button" class="close-btn" onclick="hideSignUpForm()">&times;</button>
+          <form>
+            <h2 class="login-logo">SignUp</h2>
+            <div class="form-group">
+              <label for="name" class="space">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="space">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+              <label for="password" class="space">Password:</label>
+              <input type="password" class="form-control" id="password" placeholder="password"
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+        </div>
+        </div> -->
+        <!-- <button type="button" class="open-sign-up-btn" onclick="showSignUpForm()">Sign Up</button>
+         -->
+      <!-- fotter section ... start     -->
+    <footer>
+      <div class="footer-section">
+        <div class="container">
+        <div class="container">
+
+          <div class="row sound">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="good">
+                <h4>ABOUT Resto</h4>
+                <p>Who We Are Blog</p>
+                <p>Investor Relations</p>
+                <p>Report Fraud</p>
+                <p>contact Us</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="good">
+                <h4>Our Parner</h4>
+                <p>Kooo</p>
+                <p>Blinkit</p>
+                <p>Bhandari Kitchen</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <h4>For RESTAURANTS</h4>
+              <p>We Build Brand</p>
+              <p>Apps For You</p>
+           
+              <h4>FOR ENTERPRISES</h4>
+              <p>Trust Our Brand</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="good">
+                <h4>LEARN MORE</h4>
+                <p>Privacy</p>
+                <p>Security</p>
+                <p>Teams</p>
+                <p>Sitemap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- login form...... start -->
+    
+
+<div class="form-overlay">
+  <form class="form-popup">
+    <h2 class="login-logo">Login</h2>
+    <input type="text" id="username" placeholder="Username" required> <br>
+    <input type="password" id="password" placeholder="Password" required>
+    <div class="flex"> <button class="btn-sub" type="submit">LOGIN</button> <br>
+      <button type="close" id="close-form">Close</button></div>
+     
+      <div class="or">or</div>
+      <input type="Email" id="continue-with-Email" placeholder="Continue with Email" required> <br>
+      <input type="Google" id="continue-with-Google" placeholder="Continue with Google" required>
+      <hr>
+      <p>New To Resto? <a href="#">Create accound</a></p>
+    </form>
+</div>
+    <!-- login form...... end -->
+<!-- sign up page ..... start -->
+    
+
+  <div id="signUpForm">
+    <button type="button" class="close-btn" onclick="hideSignUpForm()">&times;</button>
+    <form>
+      <h2 class="login-logo">SignUp</h2>
+      <div class="form-group">
+        <label for="name" class="space">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email" class="space">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+      </div>
+      <div class="form-group">
+        <label for="password" class="space">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="password"
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+  </div>
+
+<!-- sign up page ..... END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section .....End-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js">
+
+    </script>
+  </body>
+</html>
